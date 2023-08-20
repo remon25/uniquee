@@ -794,6 +794,12 @@ textarea.w-select {
   .contact__form {
     width: 340px !important;
   }
+
+  .contact__form input,.contact__form textarea{
+    font-size: 3.5vw;
+    line-height: 1.2;
+
+  }
 }
 @media screen and (max-width: 767px) {
   .photo-album {
@@ -1914,6 +1920,12 @@ textarea.w-select {
   .w-tab-link {
     display: block;
   }
+
+  .contact__form input,.contact__form textarea {
+    font-size: 4.5vw;
+    line-height: 1.2;
+  }
+
 }
 .w-ix-emptyfix:after {
   content: "";

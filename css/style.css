@@ -2160,6 +2160,8 @@ h5 {
   font-size: 12vw;
   line-height: 10vw;
   font-weight: 400;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.3s;
 }
 .h-head.arabic {
   font-size: 120px;
@@ -2183,6 +2185,8 @@ h5 {
   letter-spacing: -0.01em;
   text-transform: none;
   cursor: pointer;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.8s;
 }
 
 .h-quote:hover::after {
@@ -7450,6 +7454,75 @@ html.w-mod-js [data-ix="text-0-2"] {
 .more h3 {
   font-family: "Kufi";
   font-size: 5vw;
+}
+
+
+/* loading */
+
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  transition: 0.3s all ease;
+}
+
+.unique_loading {
+  height: auto;
+  width: auto;
+}
+
+.unique_loading path {
+  fill: transparent;
+  stroke-dasharray: 1582;
+  stroke-dashoffset: 1582;
+}
+
+
+/* anime */
+
+.unique_loading.loaded > svg path {
+  animation: unique_loadingAnim 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards !important;
+}
+
+.loading.finished{
+  opacity: 0;
+}
+
+/* Keyframes */
+
+@keyframes unique_loadingAnim {
+
+  0% {
+      stroke-dashoffset: 1582;
+
+  }
+
+
+  40% {
+      fill: transparent;
+  }
+
+  60% {
+      fill: #e5e3dc;
+      stroke-dashoffset: 0;
+
+  }
+  80% {
+      fill: #e5e3dc;
+  }
+
+  100% {
+    stroke: #e5e3e5;
+    stroke-dashoffset: 0;
+      fill: #e5e3dc;
+  }
 }
 
 

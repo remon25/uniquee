@@ -6424,6 +6424,8 @@ html.w-mod-js [data-ix="text-0-2"] {
   .p-col.pagelink {
     width: 90vw;
     height: 67vh;
+  }
+  .p-col.pagelink:not(:last-child){
     border-bottom: 1px solid #000;
   }
   .p-numb {

@@ -731,6 +731,7 @@
               name="user_name"
               class="contact__form-input"
               placeholder="أكتب اسمك"
+              autocomplete="off"
               id="contact-name"
             />
           </div>
@@ -742,6 +743,7 @@
               name="user_email"
               class="contact__form-input"
               placeholder="أكتب بريدك الالكتروني"
+              autocomplete="off"
               id="contact-email"
             />
           </div>
@@ -751,8 +753,10 @@
             <textarea
               name="user_project"
               placeholder="أكتب رسالتك"
+              aria-autocomplete="off"
               id="contact-project"
               class="contact__form-input"
+              style="resize: none;"
             ></textarea>
           </div>
           <p class="contact__message" id="contact-message"></p>
@@ -906,10 +910,10 @@ let sendEmail = (e) => {
     // serviceID - templateID - #form - publicKey
     emailjs
       .sendForm(
-        "service_jsa2ymp",
-        "template_wq9j727",
+        "service_qdmw15i",
+        "template_bcmpaq3",
         "#contact-form",
-        "IdFweRvVAUFEKjNOI"
+        "bBxMAyRyPChlvylta"
       )
       .then(
         () => {

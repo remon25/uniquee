@@ -6356,11 +6356,11 @@ html.w-mod-js [data-ix="text-0-2"] {
   .hero {
     position: fixed;
     left: 15vw;
-    top: 0;
+    top: -16px;
     right: 0;
     bottom: 0;
     height: 100%;
-    row-gap: 9rem;
+    row-gap: 4rem;
   }
 
   .h-block.hb-1 {
